@@ -1,0 +1,148 @@
+html{
+    background:whitesmoke;
+}
+
+h1{
+    font: bold;
+    color:darkgreen;
+    font-size: 35px;
+    font-weight: bold;
+}
+label{
+    font:bold;
+    font-size: large;
+    color: darkgreen;
+    font-weight: bold;
+}
+/*this is a class used to style single element
+.Tehsil{
+    color:red;
+}*/
+/*this is Id used to style single element
+#CNIC{
+    color: yellowgreen;
+}*/
+/*
+p[draggable]{
+    color: red;
+}*/
+/*this is universal class used to handle all html file*/
+*{
+    text-align: center;
+}
+
+
+@font-face{
+    font-family: 'Jameel Noori Nastaleeq';
+    src: url('fonts/JameelNooriNastaleeq.woff2')
+    format('.woff2')
+    url('fonts/JameelNooriNastaleeq.woff')format('woff')
+    url('fonts/JameelNooriNastaleeq.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    line-height: 2;
+    direction: ltr;
+}
+
+input[type="text"], textarea{
+    width: 300px;
+    padding: 4px;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+}
+
+input[type="text"]:focus{
+    background-color: aliceblue;
+}
+
+
+input[type="password"], textarea{
+    width: 300px;
+    padding: 4px;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type="password"]:focus{
+    background-color: aliceblue;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-header{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    padding: 10px;
+}
+
+
+.form-container{
+display: inline-block;
+grid-template-columns: 1fr 2fr;
+gap: 10px 20px;
+align-items: center;
+}
+
+button{
+    background-color: burlywood;
+    border: none;
+    color: green;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+    background-color: aliceblue;
+    color: green;
+}
+
+
+label{
+    text-align: right;
+display: table-cell;
+}
+
+.image_box {
+    text-align: center;
+    margin: 4px;
+}
+.image_box p{
+    margin-top: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+
