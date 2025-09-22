@@ -4,40 +4,47 @@
         <link rel="Stylesheet" href="./Style.css" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <title>TMS-Login</title>
     </head>
     <body>
 <div class="container">
     <div class="image_box">
 <img src="./images/Pakistan_img.jpg" alt="Pakistan Flag" />
-<p class="Tehsil">میرا پاکستان ، میرا فخر</p>
+<p>میرا پاکستان ، میرا فخر</p>
 </div>
 <h1 class="text">تحصیل انتظامیہ ریکارڈ تفصیل</h1>
 <div class="image_box">
 <img src="./images/gov_punjab_logo.png" alt="Government of Punjab" />
-<p class="Tehsil">پٹوار کی جدت</p>
+<p>پٹوار کی جدت</p>
 </div>
 </div>
-<hr><hr>
-
-    <div class="form-container">
-<label class="Tehsil">تحصیل منتخب کریں</label>
+    <div class="login-card">
+        <div class="login-header">
+            <i class="bi bi-person-circle custom-icon"></i>
+     <h2>لاگ ان کریں</h2>
+     <p>براہ مہربانی سروسز کے استعمال کے لیے اپنا ریکارڈ درج کریں</p>   
+<hr>
+     <label>تحصیل منتخب کریں</label>
 <input type="text" id="tehsil" name="tehsil" placeholder="تحصیل منتخب کریں"/>
 
 
-<label id="CNIC">اندراج شناختی کارڈ</label>
+<label>اندراج شناختی کارڈ</label>
 <input type="text" id="cnic" name="cnic" placeholder="شناختی کارڈ درج کریں"/>
 
-<label class="Tehsil">پاسورڈکااندراج کریں</label>
+<label>پاسورڈکااندراج کریں</label>
 <input type="password" id="password" name="password" placeholder="پاسورڈ کا اندراج کریں"/>
-</div>
-
 <button class="button" onclick="window.location.href='#'">لاگ ان کریں</button>
 <button class="button" onclick="window.location.href='NewAccount.html'">نیا اکاؤنٹ  بنائیں</button>
+
+</div>
+</div>
 <footer>
     <label>
 &copy;Developed by Zul Hayat
     </label>
 </footer>
+<!--For bootstrap working-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
