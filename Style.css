@@ -1,5 +1,26 @@
-html{
-    background:whitesmoke;
+@media (min-width:481px) and (max-width:1200px){
+body{
+    background: seashell;
+}
+}
+
+@media (min-width:1201px) and (max-width:1600px){
+body{
+    background: whitesmoke;
+}
+}
+
+@media (min-width:319px) and (max-width:480px){
+body{
+    background: silver;
+}
+}
+
+@media (min-width:1601px)
+{
+    body{
+        background-color:cornsilk;
+    }
 }
 
 h1{
@@ -14,23 +35,6 @@ label{
     color: darkgreen;
     font-weight: bold;
 }
-/*this is a class used to style single element
-.Tehsil{
-    color:red;
-}*/
-/*this is Id used to style single element
-#CNIC{
-    color: yellowgreen;
-}*/
-/*
-p[draggable]{
-    color: red;
-}*/
-/*this is universal class used to handle all html file*/
-*{
-    text-align: center;
-}
-
 
 @font-face{
     font-family: 'Jameel Noori Nastaleeq';
@@ -45,9 +49,10 @@ p[draggable]{
     font-family: 'Jameel Noori Nastaleeq', serif;
     line-height: 2;
     direction: ltr;
+    text-align: center;
 }
 
-input[type="text"], textarea{
+input[type="text"],input[type="password"] {
     width: 300px;
     padding: 4px;
     border: 2px solid green;
@@ -56,26 +61,13 @@ input[type="text"], textarea{
     background-repeat: no-repeat;
 }
 
-input[type="text"]:focus{
-    background-color: aliceblue;
-}
-
-
-input[type="password"], textarea{
-    width: 300px;
-    padding: 4px;
-    border: 2px solid green;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-input[type="password"]:focus{
+input[type="text"]:focus,input[type="password"]:focus{
     background-color: aliceblue;
 }
 
 img{
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -92,18 +84,18 @@ img{
 }
 
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
     align-items: center;
-    justify-content: space-between;
-    width: 94%;
-    padding: 10px;
 }
 
 
 .form-container{
-display: inline-block;
-grid-template-columns: 1fr 2fr;
-gap: 10px 20px;
+display: flex;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 100px 0px;
+row-gap: 10px; column-gap: 10px;
 align-items: center;
 }
 
@@ -111,13 +103,13 @@ button{
     background-color: burlywood;
     border: none;
     color: green;
-    padding: 15px 32px;
+    padding: 8px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
-    margin: 4px 2px;
+    margin: 6px 2px;
     cursor: pointer;
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -128,21 +120,76 @@ button{
     color: green;
 }
 
-
 label{
-    text-align: right;
-display: table-cell;
+    display: inline-block;
+    text-align: left;    
 }
 
 .image_box {
+    float:right;
     text-align: center;
-    margin: 4px;
+    padding: 20px 0;
+    height: 130px;
 }
 .image_box p{
-    margin-top: 3px;
+    margin-top: 0px;
     font-size: 18px;
     font-weight: bold;
-    color: green;
+    color: green;   
 }
 
+*{
+    box-sizing: border-box;
+}
 
+hr{
+    border: 1px solid #C6D870;
+}
+
+.login-card{
+    max-width: 400px;
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: #fff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    
+}
+
+.login-header{
+      background:#EBEBEB;
+      color: white;
+      text-align: center;
+      padding: 20px;
+}
+
+.login-header h2{
+    margin:0;
+    font: bold;
+    color:darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.login-header p{
+    margin:0;
+    font: bold;
+    color:darkgreen;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.custom-icon{
+    color: green;
+    font-size: 20px;
+}
+
+body{
+padding: 0;
+margin: 0;
+}
